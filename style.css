@@ -11,9 +11,10 @@ body {
 }
 
 :root {
-  --primary: #669999;
-  --accent: #142650;
-  --pop: rgb(219, 170, 75);
+  --primary: #73c0c2;
+  --accent: #171717;
+  --accent-2: #414141;
+  --pop: #896265;
   --bg-color: #eedfb9;
 }
 
@@ -30,6 +31,7 @@ body {
 }
 
 .sidebar {
+  border-right: 2px solid var(--accent-2);
   background-color: var(--primary);
   display: flex;
   flex-direction: column;
@@ -46,6 +48,7 @@ body {
 }
 
 .profile h6 {
+  color: var(--accent-2);
   font-size: 8px;
 }
 
@@ -74,7 +77,7 @@ body {
 
 .links li a {
   text-decoration: none;
-  color: var(--accent);
+  color: var(--pop);
   padding: 20px 0;
 }
 
@@ -286,6 +289,7 @@ body {
 }
 
 footer {
+  border-top: 2px solid var(--accent-2);
   height: 30vh;
   background-color: var(--primary);
   padding: 20px 0px;
