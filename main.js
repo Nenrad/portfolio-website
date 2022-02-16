@@ -36,9 +36,9 @@ for (let i = 0; i < projectCards.length; i++) {
 
 {
   let yourtext = [
-    ["software engineer.", "#896265"],
-    ["designer.", "#896265"],
-    ["human.", "#896265"],
+    ["software engineer.", "#142650"],
+    ["designer.", "#142650"],
+    ["human.", "#142650"],
   ];
 
   let x = 0;

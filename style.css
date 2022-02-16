@@ -12,7 +12,7 @@ body {
 
 :root {
   --primary: #669999;
-  --accent: #896265;
+  --accent: #142650;
   --bg-color: #bec7c1;
 }
 
@@ -99,7 +99,7 @@ body {
 }
 
 #changingText {
-  color: #3eb489;
+  color: #142650;
   border-right: 1px solid black;
   animation: cursoranim 1s linear infinite;
 }
