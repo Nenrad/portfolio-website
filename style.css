@@ -342,12 +342,12 @@ footer p {
   background-color: var(--primary);
 }
 
-#modal-window__content p {
-  color: var(--secondary-color);
+#modal-window__content h1 {
+  color: var(--accent);
 }
 
-#modal-window__content h1 {
-  color: var(--bg-color);
+#modal-window__content p {
+  color: black;
 }
 
 #content__button {
