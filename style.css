@@ -261,7 +261,7 @@ body {
 
 #contact form input {
   border: 1px solid var(--accent);
-  background-color: var(--primary-color);
+  background-color: white;
   outline: none;
   width: 500px;
   font-family: "Montserrat", sans-serif;
@@ -270,7 +270,7 @@ body {
 #contact form textarea {
   border: 1px solid var(--accent);
   resize: none;
-  background-color: var(--primary-color);
+  background-color: white;
   outline: none;
   width: 500px;
   height: 100px;
