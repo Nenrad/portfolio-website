@@ -38,7 +38,6 @@ body {
   position: fixed;
   text-align: center;
   padding-top: 25px;
-  border-right: 2px solid var(--accent);
 }
 
 .profile {
@@ -193,7 +192,7 @@ body {
   background-color: var(--menu-color);
   height: 240px;
   padding: 0px 10px;
-  border: 2px solid gold;
+  border: 2px solid var(--accent);
 }
 
 #projects {
@@ -258,7 +257,7 @@ body {
 }
 
 #contact form input {
-  border: 1px solid gold;
+  border: 1px solid var(--accent);
   background-color: var(--primary-color);
   outline: none;
   width: 500px;
@@ -266,7 +265,7 @@ body {
 }
 
 #contact form textarea {
-  border: 1px solid gold;
+  border: 1px solid var(--accent);
   resize: none;
   background-color: var(--primary-color);
   outline: none;
@@ -288,7 +287,6 @@ body {
 
 footer {
   height: 30vh;
-  border-top: 2px solid gold;
   background-color: var(--menu-color);
   padding: 20px 0px;
   margin-left: 200px;
@@ -333,10 +331,10 @@ footer p {
 }
 
 #modal-window__content {
-  border: 2px solid gold;
+  border: 2px solid var(--accent);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 2px;
   margin-left: calc(200px + (100vw - 200px - 500px) / 2);
-  color: gold;
+  color: var(--accent);
   padding: 20px;
   border-radius: 20px;
   width: 500px;
@@ -367,5 +365,5 @@ footer p {
 }
 
 button {
-  border: 1px solid gold;
+  border: 1px solid var(--accent);
 }
