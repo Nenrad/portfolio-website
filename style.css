@@ -355,7 +355,7 @@ footer p {
 }
 
 #content__button {
-  color: var(--primary);
+  color: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
