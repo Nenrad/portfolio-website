@@ -152,10 +152,6 @@ body {
   color: var(--primary-color);
 }
 
-.about__cta button img {
-  margin-left: 5px;
-}
-
 #skills {
   height: 100vh;
   margin-left: 200px;
