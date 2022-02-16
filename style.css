@@ -102,7 +102,7 @@ body {
 }
 
 #changingText {
-  color: #142650;
+  color: var(--primary);
   border-right: 1px solid black;
   animation: cursoranim 1s linear infinite;
 }
