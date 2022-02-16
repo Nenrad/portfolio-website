@@ -13,6 +13,7 @@ body {
 :root {
   --primary: #669999;
   --accent: #142650;
+  --pop: rgb(219, 170, 75);
   --bg-color: #bec7c1;
 }
 
@@ -45,7 +46,6 @@ body {
 }
 
 .profile h6 {
-  color: black;
   font-size: 8px;
 }
 
@@ -74,7 +74,7 @@ body {
 
 .links li a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--accent);
   padding: 20px 0;
 }
 
