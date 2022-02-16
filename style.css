@@ -140,7 +140,7 @@ body {
   width: 120px;
   height: 40px;
   border-radius: 999px;
-  background-color: var(--primary-color);
+  background-color: var(--primary);
   color: #edf5e1;
 }
 
@@ -282,7 +282,7 @@ body {
   width: 120px;
   height: 40px;
   border-radius: 999px;
-  background-color: var(--primary-color);
+  background-color: var(--primary);
 }
 
 footer {
