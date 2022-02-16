@@ -144,7 +144,7 @@ body {
   height: 40px;
   border-radius: 999px;
   background-color: var(--primary);
-  color: #edf5e1;
+  color: var(--accent);
 }
 
 #about h1 {
