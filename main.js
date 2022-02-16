@@ -5,8 +5,8 @@ modalContentEl = document.getElementById("modal-window__content");
 projectDescriptions = {
   javaScriptCalculator: {
     title: `JavaScript Calculator`,
-    description: `In this project I built a calculator that supports addition, subtraction, multiplication, division, and exponentiation. In addition, this calculator can compute entire expression involving the allowed operations. That is, it supports order of operations!`,
-    improvements: `There is certainly room for improvement in this project. For example, while one can chain expressions (use the result of a previous calculations in new ones), if the numbers get too big then the output is given in e notation which cannot be correctly interpreted by my program. I would also like the calculator to support parentheses and negation. More fundamentally, I think building a true syntax parser is the cleanest way to do this project. It would make it significantly easier to implement more features.`,
+    description: `In this project I built a calculator that supports addition, subtraction, multiplication, division, and exponentiation. In addition, this calculator can compute entire expression involving the above mentioned operations. That is, it supports order of operations!`,
+    improvements: `There is certainly room for improvement in this project. For example, while one can chain expressions (use the result of previous calculations in new ones), if the numbers get too big then the output is given in e notation which cannot be correctly interpreted by my program. I also think this calculator is missing a very important feature: parentheses. More fundamentally, this project could be improved significantly by my using a syntax tree instead of the approach I developed from scratch.`,
     link: "#",
   },
 };
