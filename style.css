@@ -12,7 +12,7 @@ body {
 
 :root {
   --primary: #669999;
-  --accent: #d1b83f;
+  --accent: #ff3333;
   --bg-color: rgb(153, 153, 153);
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 .profile {
-  color: var(--bg-color);
+  color: var(--accent);
 }
 
 .profile h6 {
