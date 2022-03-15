@@ -94,11 +94,11 @@ body {
 }
 
 .hero {
-  height: 800px;
+  font-size: 1.5vw;
+  height: 700px;
   color: var(--secondary-color);
   display: flex;
   flex-direction: column;
-  padding-top: 35vh;
   align-items: center;
 }
 
@@ -116,7 +116,7 @@ body {
 
 #about {
   line-height: 2vw;
-  height: 800px;
+  height: 700px;
   padding-left: calc(200px + 12.5vw);
   padding-right: 12.5vw;
   padding-top: 100px;
@@ -161,7 +161,7 @@ body {
 }
 
 #skills {
-  height: 808px;
+  height: 700px;
   margin-left: calc(190px + (100vw - 200px - 60vw) / 2);
 }
 
@@ -211,11 +211,12 @@ body {
 }
 
 #projects {
-  height: 100vh;
-  margin-left: calc(190px + (100vw - 200px - 60vw) / 2);
+  height: 700px;
+  margin-left: 200px;
 }
 
 #projects h1 {
+  margin-left: 190px;
   color: var(--primary-color);
   font-size: 2.5vw;
   margin-bottom: 20px;
@@ -223,10 +224,10 @@ body {
 }
 
 .projects__project-cards {
-  padding-left: 2px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
   width: fit-content;
 }
 
@@ -237,6 +238,10 @@ body {
   background-color: var(--primary);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 4px 2px;
   transition: transform 100ms ease-in;
+}
+
+.project-cards__project-card img {
+  width: 12vw;
 }
 
 .project-cards__project-card:hover {
@@ -304,7 +309,7 @@ body {
 
 footer {
   border-top: 2px solid var(--accent);
-  height: 300px;
+  height: 200px;
   background-color: var(--accent-2);
   padding: 20px 0px;
   margin-left: 200px;
@@ -340,31 +345,34 @@ footer p {
   position: absolute;
   display: flex;
   align-items: center;
-  transform: translateY(-200vh);
-  width: 100%;
-  height: 100%;
-  /* background-color: rgba(255, 255, 255, 0);
-  -webkit-backdrop-filter: blur(3px);
-  backdrop-filter: blur(3px); */
+  transform: translateY(-1400px);
+  width: 100vw;
+  height: 100vh;
 }
 
 #modal-window__content {
   border: 2px solid var(--accent);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px 2px;
-  margin-left: calc(200px + (100vw - 200px - 500px) / 2);
+  margin-left: calc(200px + (100vw - 200px - 40vw) / 2);
   color: var(--accent);
   padding: 20px;
   border-radius: 20px;
-  width: 500px;
-  height: 500px;
+  width: 40vw;
+  height: 38vw;
   background-color: var(--primary);
 }
 
 #modal-window__content h1 {
+  font-size: 2.5vw;
   color: var(--accent);
 }
 
+#modal-window__content h2 {
+  font-size: 1.8vw;
+}
+
 #modal-window__content p {
+  font-size: 1.2vw;
   color: black;
 }
 
@@ -374,10 +382,10 @@ footer p {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 15px;
-  margin: 20px auto;
-  width: 120px;
-  height: 40px;
+  margin: 0.5vw auto;
+  font-size: 1.2vw;
+  width: 8vw;
+  height: 3vw;
   border-radius: 999px;
   background-color: var(--bg-color);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
