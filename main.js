@@ -12,8 +12,7 @@ projectDescriptions = {
   },
   weatherApp: {
     title: "Weather API App",
-    description:
-      "In this project I built a simple weather app. On launch it detects the users location based on their IP address and displays their local weather according to 'The Weather API'. The user is able to request the weather for any other location the API supports via a search bar which features autocomplete. They can save the location they are currently viewing for ease of access in the future.",
+    description: `In this project I built a simple weather app using HTML, CSS, and 'vanilla' JavaScript. On launch it detects the users location based on their IP address and displays their local weather according to 'The Weather API'. The user is able to request the weather for any other location the API supports via a search bar which features autocomplete. They can save the location they are currently viewing for ease of access in the future.`,
     improvements:
       "The intent of this project was to demonstrate my ability to make API requests, display information dynamically, etc. I believe I accomplished this goal. Nonetheless, I would like to improve the design. I think adding background images that reflect the current weather condition would be a good place to start.",
     link: "https://weatherapp.seanogary.dev/",
