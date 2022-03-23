@@ -15,6 +15,33 @@
     <title>Sean O'Gary</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Sean O'Gary</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="sidebar">
       <div class="profile">
         <div class="image-container">
@@ -81,7 +108,7 @@
       </p>
       <hr style="background-color: #3a3939; height: 2px; border: none" />
       <div class="about__cta">
-        <button onclick="location.href='#projects'" class="btn btn-outline-danger">Projects</button>
+        <button onclick="location.href='#projects'" class="btn btn-outline-danger btn-lg">Projects</button>
         <button class="btn btn-outline-danger"type="submit" onclick="window.open('files/resume_.pdf')">
           My Resume
         </button>
@@ -102,12 +129,12 @@
       <h1>Projects</h1>
       <div class="projects__project-cards">
         <button type="button" data-bs-toggle="modal" data-bs-target="#calculator-modal">
-          <div class="card" style="width: 8rem" id="javaScriptCalculator">
+          <div class="card"  id="javaScriptCalculator">
             <img class="card-img-top" src="img/calculator-project.PNG" />
           </div>
       </button>
         <button type="button" data-bs-toggle="modal" data-bs-target="#weatherapp-modal">
-          <div class="card" style="width: 8rem" id="weatherApp">
+          <div class="card"  id="weatherApp">
             <img class="card-img-top" src="img/Weather API App.png" />
           </div>
         </button>
@@ -169,7 +196,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-danger">Try It Out</button>
           </div>
         </div>
       </div>
@@ -182,11 +209,11 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            In this project I built a calculator that supports addition, subtraction, multiplication, division, and exponentiation. In addition, this calculator can compute entire expression involving the above mentioned operations. That is, it supports order of operations!
+            In this project I built a simple weather app using HTML, CSS, and 'vanilla' JavaScript. On launch it detects the users location based on their IP address and displays their local weather according to 'The Weather API'. The user is able to request the weather for any other location the API supports via a search bar which features autocomplete. They can save the location they are currently viewing for ease of access in the future.
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-danger">Try it Out</button>
           </div>
         </div>
       </div>

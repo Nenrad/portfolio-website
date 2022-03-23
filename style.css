@@ -85,6 +85,14 @@ body {
   padding: 20px 0;
 }
 
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
 .social-links img {
   width: 20px;
   height: 20px;
@@ -92,15 +100,13 @@ body {
 }
 
 .hero {
-  font-size: 1.5vw;
-  height: auto;
   color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: auto;
-  height: 700px;
+  height: 100vh;
 }
 
 .introduction {
@@ -108,7 +114,7 @@ body {
 }
 
 .introduction h1 {
-  font-size: 4vw;
+  font-size: 3.4vw;
 }
 #changingText {
   color: var(--primary);
@@ -125,24 +131,23 @@ body {
 #about {
   margin: 0 auto;
   width: 80%;
-  line-height: 1.5vw;
   height: auto;
   color: var(--secondary-color);
 }
 
 #about h1 {
   color: var(--primary-color);
-  font-size: 2.5vw;
+  font-size: 3vw;
   margin-bottom: 20px;
 }
 
 #about p {
   margin: 0px;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
 }
 
 #about h2 {
-  font-size: 1.8vw;
+  font-size: 2.5vw;
 }
 
 #about .image-container-about {
@@ -152,7 +157,7 @@ body {
 
 #about img {
   margin: 0px 8px 0px 0px;
-  width: 11vw;
+  width: 20vw;
   float: left;
 }
 
@@ -174,7 +179,7 @@ body {
 
 #skills h1 {
   color: var(--primary-color);
-  font-size: 2.5vw;
+  font-size: 3vw;
   margin-bottom: 20px;
   padding-top: 80px;
 }
@@ -182,7 +187,9 @@ body {
 #skills div {
   display: flex;
   align-items: space-between;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 50%;
+  margin: 0 auto;
 }
 
 #projects {
@@ -191,15 +198,25 @@ body {
   height: auto;
 }
 
+.card {
+  width: 15vw;
+}
+
 #projects h1 {
   color: var(--primary-color);
-  font-size: 2.5vw;
+  font-size: 3vw;
   margin-bottom: 20px;
   padding-top: 80px;
 }
 #projects button {
   background-color: transparent;
   border: none;
+  margin: 20px;
+}
+
+.projects__project-cards {
+  display: flex;
+  justify-content: center;
 }
 #contact {
   display: flex;
@@ -208,12 +225,12 @@ body {
   margin: 0 auto;
   width: 80%;
   color: var(--secondary-color);
-  height: 550px;
+  height: 600px;
 }
 
 #contact h1 {
   color: var(--primary-color);
-  font-size: 2.5vw;
+  font-size: 3vw;
   margin-bottom: 20px;
   padding-top: 80px;
 }
@@ -340,12 +357,20 @@ footer p {
 button {
   border: 1px solid var(--accent);
 }
-
-.collapse-nav {
+.navbar-expand-lg {
   display: none;
 }
 
 @media screen and (max-width: 750px) {
+  .navbar-expand-lg {
+    display: inline;
+    width: 100vw;
+    position: fixed;
+    background-color: var(--primary);
+  }
+  .card {
+    width: 8rem;
+  }
   .collapse-nav {
     display: block;
     transform: translateX(-82px);
@@ -361,21 +386,21 @@ button {
   }
   #about {
     width: 100%;
-    line-height: 3vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 20px;
     align-items: center;
     text-align: center;
     height: auto;
   }
   #about h1 {
-    font-size: 4.9vw;
+    font-size: 5vw;
     margin: 0px;
   }
 
   #about h2 {
-    font-size: 3vw;
+    font-size: 4vw;
     margin: 0px;
   }
 
@@ -412,17 +437,28 @@ button {
     margin: 0 10px;
   }
 
+  #skills h1 {
+    font-size: 5vw;
+  }
+
   #projects {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  #projects h1 {
+    font-size: 5vw;
+  }
   .projects__project-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
   }
 
+  #contact h1 {
+    font-size: 5vw;
+  }
   #contact form input {
     width: 80vw;
   }
@@ -447,8 +483,9 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-self: space-between;
     margin: 0;
-    padding: 0 15vw;
+    padding: 0 5vw;
   }
 }
 
