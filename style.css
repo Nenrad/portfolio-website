@@ -358,6 +358,7 @@ button {
   border: 1px solid var(--accent);
 }
 .navbar-expand-lg {
+  z-index: 999;
   display: none;
 }
 
