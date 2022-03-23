@@ -1,49 +1,15 @@
-projectCards = document.querySelectorAll(".project-cards__project-card");
-modalEl = document.getElementById("modal-window");
-modalContentEl = document.getElementById("modal-window__content");
-modalContentButtonEl = document.getElementById("content__button");
+weatherAppTryButton = document.querySelector(".weatherapp-modal-try-button");
+calculatorTryButton = document.querySelector(".calculator-modal-try-button");
 
-projectDescriptions = {
-  javaScriptCalculator: {
-    title: `JavaScript Calculator`,
-    description: `In this project I built a calculator that supports addition, subtraction, multiplication, division, and exponentiation. In addition, this calculator can compute entire expression involving the above mentioned operations. That is, it supports order of operations!`,
-    improvements: `While one can chain expressions (use the result of previous calculations in new ones), if the numbers get too big then the output is given in e notation which cannot be correctly interpreted by my program. I also think this calculator is missing a very important feature: parentheses. More fundamentally, this project could be improved significantly by my using a syntax tree instead of the approach I developed from scratch.`,
-    link: "https://jscalc.seanogary.dev/",
-  },
-  weatherApp: {
-    title: "Weather API App",
-    description: `In this project I built a simple weather app using HTML, CSS, and 'vanilla' JavaScript. On launch it detects the users location based on their IP address and displays their local weather according to 'The Weather API'. The user is able to request the weather for any other location the API supports via a search bar which features autocomplete. They can save the location they are currently viewing for ease of access in the future.`,
-    improvements:
-      "The intent of this project was to demonstrate my ability to make API requests, display information dynamically, etc. I believe I accomplished this goal. Nonetheless, I would like to improve the design. I think adding background images that reflect the current weather condition would be a good place to start.",
-    link: "https://weatherapp.seanogary.dev/",
-  },
-};
-
-modalContentEl.addEventListener("click", function (event) {
-  event.stopPropagation();
+weatherAppTryButton.addEventListener("click", () => {
+  window.open("https://jscalc.seanogary.dev/");
 });
 
-document.body.addEventListener("click", function () {
-  modalEl.style.display = "none";
+calculatorTryButton.addEventListener("click", () => {
+  window.open("https://weatherapp.seanogary.dev/");
 });
 
-for (let i = 0; i < projectCards.length; i++) {
-  let el = projectCards[i];
-  console.log(el);
-  el.addEventListener("click", function (event) {
-    event.stopPropagation();
-    document.getElementById("modal-window").style.display = "flex";
-    document.getElementById("content__description").innerText =
-      projectDescriptions[el.id].description;
-    document.getElementById("content__improvements").innerText =
-      projectDescriptions[el.id].improvements;
-    document.getElementById("content__title").innerText =
-      projectDescriptions[el.id].title;
-    modalContentButtonEl.addEventListener("click", () => {
-      window.open(`${projectDescriptions[el.id].link}`);
-    });
-  });
-}
+console.log(calculatorTryButton);
 
 {
   let yourtext = [
