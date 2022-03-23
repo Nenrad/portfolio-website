@@ -84,6 +84,11 @@ body {
   color: var(--accent);
   padding: 20px 0;
 }
+.social-links img {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
 
 .nav-link {
   color: black;
@@ -91,12 +96,6 @@ body {
 
 .nav-link:hover {
   color: black;
-}
-
-.social-links img {
-  width: 20px;
-  height: 20px;
-  margin: 10px;
 }
 
 .hero {
@@ -181,7 +180,6 @@ body {
   color: var(--primary-color);
   font-size: 3vw;
   margin-bottom: 20px;
-  padding-top: 80px;
 }
 
 #skills div {
@@ -206,7 +204,6 @@ body {
   color: var(--primary-color);
   font-size: 3vw;
   margin-bottom: 20px;
-  padding-top: 80px;
 }
 #projects button {
   background-color: transparent;
@@ -232,7 +229,6 @@ body {
   color: var(--primary-color);
   font-size: 3vw;
   margin-bottom: 20px;
-  padding-top: 80px;
 }
 
 #contact form {
