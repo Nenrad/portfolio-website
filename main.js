@@ -2,11 +2,11 @@ weatherAppTryButton = document.querySelector(".weatherapp-modal-try-button");
 calculatorTryButton = document.querySelector(".calculator-modal-try-button");
 
 weatherAppTryButton.addEventListener("click", () => {
-  window.open("https://jscalc.seanogary.dev/");
+  window.open("https://weatherapp.seanogary.dev/");
 });
 
 calculatorTryButton.addEventListener("click", () => {
-  window.open("https://weatherapp.seanogary.dev/");
+  window.open("https://jscalc.seanogary.dev/");
 });
 
 console.log(calculatorTryButton);
